@@ -5,7 +5,7 @@ const gridsNumber = document.getElementById('grids-number');
 function makeGrid(num) {
   container.style.gridTemplateColumns = `repeat(${num}, minmax(0px, 1fr))`;
 }
-makeGrid(64);
+makeGrid(32);
 
 function createDivs(num) {
   for (let i = 1; i <= num * num; i++) {
@@ -16,11 +16,12 @@ function createDivs(num) {
 div.addEventListener('mouseover', ()=> div.style.background = '#000');
   }
 }
-createDivs(64);
+createDivs(32);
 
 function resetDivs() {
   container.innerHTML = '';
-  createDivs(64);
+  createDivs(32);
   }
 
 newGrids.addEventListener('click', () => resetDivs());
+
