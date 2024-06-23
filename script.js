@@ -11,6 +11,7 @@ function createDivs(num) {
     div.classList.add('grid');
     div.style.border = "black solid 1px";
     container.appendChild(div);
+div.addEventListener('mouseover', ()=> div.style.background = '#000');
   }
 }
 createDivs(32);
