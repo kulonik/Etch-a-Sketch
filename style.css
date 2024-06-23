@@ -4,6 +4,27 @@ body {
   height: 100vh;
 }
 
+.buttons {
+  width: 230px;
+  display: block;
+  margin: 20px auto;
+}
+
+.btn {
+  width: 100px;
+  height: 30px;
+  background-color: #f0bbbb;
+  border: #f0bbbb solid 1px;
+  border-radius: 3px;
+  margin: 0 5px;
+  box-shadow: #c7b8b8 4px 3px 6px 0px;
+}
+
+.btn:hover {
+  transform: translate(1px, 1px);
+  box-shadow: none;
+}
+
 #container {
   display: grid;
   position: relative;
